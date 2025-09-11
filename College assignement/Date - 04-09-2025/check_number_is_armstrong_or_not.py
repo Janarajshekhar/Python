@@ -12,4 +12,4 @@ for digit in num_str:
 if sum == num:
     print(num,"is an Armstrong number")
 else:
-    print(num,"is not an Armstrong number")
+    print(num,"is not an Armstrong number") 

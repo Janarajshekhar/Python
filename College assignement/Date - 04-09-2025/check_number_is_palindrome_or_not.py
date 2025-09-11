@@ -13,4 +13,4 @@ if num1 < 0:
 if num2 == reversed :
     print(num2," is palindrome number")
 else:
-    print(num2," is not palindrome number")
+    print(num2," is not palindrome number") 

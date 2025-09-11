@@ -10,4 +10,4 @@ elif num1 == 0:
 else:
     for i in range(1,num1+1):
         fact = fact*i
-    print(f"The factorial of {num1} is {fact}") 
+    print(f"The factorial of {num1} is {fact}")
