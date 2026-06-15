@@ -5,16 +5,16 @@ import matplotlib.pyplot as plt
 
 # Input data
 data = {
-    'Hours_studied': [10, 8, 15, 18, 5, 20, 12, 14, 7, 11],
-    'Test_scores': [85, 78, 92, 95, 60, 98, 88, 90, 72, 82],
-    'Coffin_intake': [2, 1, 3, 4, 1, 5, 2, 3, 1, 2]
+    'Math': [78,85,96,80,86],
+    'Science': [88,90,94,82,89],
+    'English': [72,75,78,70,74]
 }
 
 # Create DataFrame
 df = pd.DataFrame(data)
 
 # Compute Pearson correlation between specific columns
-correlation = df['Hours_studied'].corr(df['Test_scores'])
+correlation = df['Math'].corr(df['Science'])
 
 # Display correlation value
 print(f"Pearson Correlation between Hours Studied and Test Scores: {correlation:.4f}")
