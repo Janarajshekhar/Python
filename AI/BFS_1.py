@@ -2,10 +2,11 @@ from collections import deque
 graph = {
     'A' : ['B', 'C'],
     'B' : ['D', 'E'],
-    'C' : ['F'],
+    'C' : ['F', 'G'],
     'D' : [],
     'E' : [],
-    'F' : []
+    'F' : [],     
+    'G' : []
 }
 queue = deque()
 visited = set()
@@ -13,7 +14,7 @@ traversal_order = []
 start_node = 'A'
 queue.append(start_node)
 visited.add(start_node)
-while queue :
+while queue : 
     current = queue.popleft()
     traversal_order.append(current)
     for neighbor in graph[current] :
