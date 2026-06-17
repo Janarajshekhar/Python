@@ -1,5 +1,5 @@
 import heapq
-def a_star(graph, heruristic, start, goal):
+def a_star(graph, heuristic, start, goal):
     open_list = []
     heapq.heappush(open_list, (0, start))
     g_cost = {start : 0}
@@ -17,7 +17,7 @@ def a_star(graph, heruristic, start, goal):
             new_g = g_cost[current_node] + cost
             if neighbor not in g_cost or new_g < g_cost[neighbor] :
                 g_cost[neighbor] = new_g
-                f = new_g + heruristic[neighbor]
+                f = new_g + heuristic[neighbor]
                 heapq.heappush(open_list, (f, neighbor))
                 parent[neighbor] = current_node
     return None, float('inf')
@@ -31,7 +31,7 @@ graph = {
     'Y' : [('E', 3)],
     'E' : []
 }
-heruristic = {
+heuristic = {
     'S' : 15,
     'A' : 5,
     'B' : 6,
@@ -43,6 +43,6 @@ heruristic = {
 }
 start = 'S'
 goal = 'E'
-path, cost = a_star(graph, heruristic, start, goal)
+path, cost = a_star(graph, heuristic, start, goal)
 print("shortest path : ", " --> ".join(path))
 print("Total cost : ", cost)
