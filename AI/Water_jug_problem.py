@@ -21,4 +21,9 @@ def water_jug(jug1_cap, jug2_cap, terget):
 jug1_capacity = int(input("Enter capacity of Jug 1: "))
 jug2_capacity = int(input("Enter capacity of Jug 2: "))
 target = int(input("Enter target amount of water: "))
-water_jug(jug1_capacity, jug2_capacity, target)
+if jug1_capacity == target:
+    print(f"Final state : ({jug1_capacity}, {0})")
+elif jug2_capacity == target :
+    print(f"Final stage : ({0}, {jug2_capacity})")
+else :
+    water_jug(jug1_capacity, jug2_capacity, target)
