@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 data = {
     'Hours_studied': [10, 8, 15, 18, 5, 20, 12, 14, 7, 11],
     'Test_scores': [85, 78, 92, 95, 60, 98, 88, 90, 72, 82],
-    'Coffin_intake': [2, 1, 3, 4, 1, 5, 2, 3, 1, 2]
+    'Coffee_intake': [2, 1, 3, 4, 1, 5, 2, 3, 1, 2]
 }
 
 # Create DataFrame

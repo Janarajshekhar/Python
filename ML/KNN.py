@@ -12,8 +12,7 @@ knn.fit(data,classes) #stores training data
 #3. Predict new point
 new_point = [[8,21]]
 prediction = knn.predict(new_point)
-\
-    
+
 print(f"Pediction : {prediction[0]}")
 
 #4. Visualize
