@@ -18,7 +18,7 @@ heuristic = {
     "G": 0
 }
 start = "A"
-goal = "E"
+goal = "G"
 pq = [(heuristic[start], 0, start, [])]
 while pq :
     f, g, node, path = heapq.heappop(pq)
