@@ -10,7 +10,6 @@ stemmer = PorterStemmer()
 
 stemmer_words = [stemmer.stem(word) for word in words]
 print("Original words : ")
-
 print(words)
 
 print("\n After Stemming : ")
