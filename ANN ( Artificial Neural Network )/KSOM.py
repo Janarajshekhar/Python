@@ -12,7 +12,7 @@ W_initial = np.array([
     [0.6, 0.5, 0.4, 0.2]     # W2
 ], dtype=float)
 
-alpha = 0.6
+alpha = 0.8
 max_iterations = 1000
 
 
