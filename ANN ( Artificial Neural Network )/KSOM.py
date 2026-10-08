@@ -12,7 +12,7 @@ W_initial = np.array([
     [0.6, 0.5, 0.4, 0.2]     # W2
 ], dtype=float)
 
-alpha = 0.8
+alpha = 0.6
 max_iterations = 1000
 
 
@@ -20,7 +20,7 @@ def ksom(X, W_initial, alpha):
 
     W = W_initial.copy()
 
-    print("\n==============================================")
+    # print("\n==============================================")
     print("        KSOM TRAINING STARTED")
     print("==============================================")
     print("\nLearning Parameter (alpha) =", alpha)
@@ -30,7 +30,7 @@ def ksom(X, W_initial, alpha):
         old_W = W.copy()      # weights before this epoch
 
         print("\n")
-        print("==============================================")
+        # print("==============================================")
         print("ITERATION / EPOCH:", iteration)
         print("==============================================")
 
@@ -59,7 +59,7 @@ def ksom(X, W_initial, alpha):
         # Stop when old weights and new weights are the same (compared to 6 decimals)
         if np.array_equal(np.round(W, 6), np.round(old_W, 6)):
 
-            print("\n==============================================")
+            # print("\n==============================================")
             print("CONVERGENCE REACHED")
             print("==============================================")
             print("Old weights and new weights are the same")
@@ -71,7 +71,7 @@ def ksom(X, W_initial, alpha):
 
 final_W, total_iterations = ksom(X, W_initial, alpha)
 
-print("\n\n==============================================")
+# print("\n\n==============================================")
 print("              FINAL RESULT")
 print("==============================================")
 print("\nLearning Parameter =", alpha)
@@ -80,4 +80,4 @@ print(np.round(final_W[0], 6))
 print("\nFinal Weight W2:")
 print(np.round(final_W[1], 6))
 print("\nTotal Iterations / Epochs Required:", total_iterations)
-print("==============================================")
+# print("==============================================")

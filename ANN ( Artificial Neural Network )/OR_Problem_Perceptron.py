@@ -18,7 +18,7 @@ def perceptronModel(x, w, b):
 # w1 = 1, w2 = 1, b = -1.5
 def AND_logicFunction(x):
     w = np.array([1, 1])
-    b = -1.5
+    b = -0.5
     return perceptronModel(x, w, b)
 
 # testing the Perceptron Model
