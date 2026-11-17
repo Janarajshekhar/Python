@@ -1,5 +1,5 @@
 import cv2
-image = cv2.imread("D:\BCA\PROGRAMMING LANGUAGES\PYTHON\DIP ( Digital Image Processing )\Images\gray_image_3.jpg")
+image = cv2.imread(r"D:\BCA\PROGRAMMING LANGUAGES\PYTHON\DIP ( Digital Image Processing )\Images\gray_image_3.jpg")
 if image is None :
     print("Error Image Not Found !")
     exit()

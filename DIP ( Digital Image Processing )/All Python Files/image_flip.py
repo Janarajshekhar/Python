@@ -1,5 +1,5 @@
 from PIL import Image
-image = Image.open("D:\BCA\PROGRAMMING LANGUAGES\PYTHON\DIP ( Digital Image Processing )\Images\gray_image_3.jpg")
+image = Image.open(r"D:\BCA\PROGRAMMING LANGUAGES\PYTHON\DIP ( Digital Image Processing )\Images\gray_image_3.jpg")
 
 horizontal_flip = image.transpose(Image.FLIP_LEFT_RIGHT)
 horizontal_flip.save("Horizontal_flip.jpg")
