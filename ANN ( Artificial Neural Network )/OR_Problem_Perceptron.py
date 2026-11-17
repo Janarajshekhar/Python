@@ -15,7 +15,7 @@ def perceptronModel(x, w, b):
     return y
 
 # OR Logic Function
-# w1 = 1, w2 = 1, b = -1.5
+# w1 = 1, w2 = 1, b = -0.5
 def OR_logicFunction(x):
     w = np.array([1, 1])
     b = -0.5
