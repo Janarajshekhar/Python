@@ -14,9 +14,9 @@ def perceptronModel(x, w, b):
     y = unitStep(v)
     return y
 
-# AND Logic Function
-# w1 = 1, w2 = 1, b = -1.5
-def AND_logicFunction(x):
+# NAND Logic Function
+# w1 = -0.2, w2 = -0.4, b = 0.4
+def NAND_logicFunction(x):
     w = np.array([-0.2, -0.4])
     b = 0.4
     return perceptronModel(x, w, b)
@@ -27,7 +27,7 @@ test2 = np.array([0, 1])
 test3 = np.array([1, 0])
 test4 = np.array([1, 1])
 
-print("AND({}, {}) = {}".format(0, 0, AND_logicFunction(test1)))
-print("AND({}, {}) = {}".format(0, 1, AND_logicFunction(test2)))
-print("AND({}, {}) = {}".format(1, 0, AND_logicFunction(test3)))
-print("AND({}, {}) = {}".format(1, 1, AND_logicFunction(test4)))
+print("NAND({}, {}) = {}".format(0, 0, NAND_logicFunction(test1)))
+print("NAND({}, {}) = {}".format(0, 1, NAND_logicFunction(test2)))
+print("NAND({}, {}) = {}".format(1, 0, NAND_logicFunction(test3)))
+print("NAND({}, {}) = {}".format(1, 1, NAND_logicFunction(test4)))

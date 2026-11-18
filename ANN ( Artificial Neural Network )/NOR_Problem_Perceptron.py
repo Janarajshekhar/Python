@@ -15,7 +15,7 @@ def perceptronModel(x, w, b):
     return y
 
 # NOR Logic Function
-# w1 = 1, w2 = 1, b = 0.5
+# w1 = -1, w2 = -1, b = 0.5
 def NOR_logicFunction(x):
     w = np.array([-1, -1])
     b = 0.5
