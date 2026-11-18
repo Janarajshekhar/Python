@@ -15,28 +15,22 @@ def perceptronModel(x, w, b):
     y = unitStep(v)
     return y
 
-# XOR Logic Function using a Multilayer Perceptron
 def XOR_logicFunction(x):
 
-    # Hidden layer: OR and NAND
-    w_or = np.array([1, 1])
-    b_or = -0.5
+    w1 = np.array([1, -1])
+    b1 = -0.5
+    h1 = perceptronModel(x, w1, b1)
 
-    w_nand = np.array([-1, -1])
-    b_nand = 1.5
+    w2 = np.array([-1, 1])
+    b2 = -0.5
+    h2 = perceptronModel(x, w2, b2)
 
-    # Output layer: AND
-    w_and = np.array([1, 1])
-    b_and = -1.5
-
-    # Calculate hidden layer outputs
-    h1 = perceptronModel(x, w_or, b_or)    # OR
-    h2 = perceptronModel(x, w_nand, b_nand) # NAND
+    w3 = np.array([1, 1])
+    b3 = -0.5
 
     # Calculate final XOR output
     hidden_output = np.array([h1, h2])
-    y = perceptronModel(hidden_output, w_and, b_and)
-
+    y = perceptronModel(hidden_output, w3, b3)
     return y
 
 # Testing the XOR Model
