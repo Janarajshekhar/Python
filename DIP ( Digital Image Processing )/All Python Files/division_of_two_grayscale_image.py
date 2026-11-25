@@ -11,7 +11,7 @@ img2 = img2.resize(img1.size)
 a = np.array(img1, dtype=float)
 b = np.array(img2, dtype=float)
 
-img3 = np.divide(a, b, out=np.zeros_like(a), where=b != 0)
+img3 = np.divide(a, b, out=np.zeros_like(a), where=b != 0) 
 img3 = np.clip(img3, 0, 255).astype(np.uint8)
 
 plt.subplot(1, 3, 1)
