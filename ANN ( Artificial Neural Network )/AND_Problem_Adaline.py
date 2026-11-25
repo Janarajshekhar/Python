@@ -27,7 +27,7 @@ while True:
         print("\nTraining stopped: Error condition satisfied.")
         break
 
-print("\nFinal OR Gate Output:")
+print("\nFinal AND Gate Output:")
 for x1, x2 in X:
     y = w1*x1 + w2*x2 + b
     print(f"{x1:2d} {x2:2d} -> y={y:.4f}, output={1 if y>=0 else -1}")
